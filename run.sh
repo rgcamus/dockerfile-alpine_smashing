@@ -2,7 +2,7 @@
 
 function install_json() {
   echo -e "\ngem 'json'" >> Gemfile
-  echo -e "\nAdded json's explicit dependency on Gemfile."
+  echo -e "\nAdded json dependency to Gemfile."
 }
 
 function install_widgets() {
@@ -17,13 +17,15 @@ function install_widgets() {
 
 function install_gems() {
   GEMS=$@
-  if [[ ! -z "$GEMS" ]]; then
-    echo -e "\nInstalling gem(s): $GEMS"
-    for GEM in $GEMS; do
-      echo -e "\ngem '$GEM'" >> Gemfile
-    done
-    bundle install
-  fi
+  IFS="|" read -a gems_array <<< "$GEMS"
+
+  echo -e "\nInstalling gem(s): $GEMS"
+  for GEM in "${gems_array[@]}"
+  do
+      echo -e "\ngem $GEM"
+      echo -e "\ngem $GEM" >> Gemfile
+  done
+  bundle install
 }
 
 if [[ ! -e /installed ]]; then
