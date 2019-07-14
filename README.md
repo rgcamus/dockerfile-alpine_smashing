@@ -1,4 +1,4 @@
-# Smashing Alpine Container:  The new <http://dashing.io> fork name
+# Smashing Alpine Container:  The new [dashing.io](http://dashing.io) fork name
 
 Run [Smashing](https://github.com/Smashing/smashing) in a minimal [Alpine](https://alpinelinux.org/about/) [Docker](http://docker.io/) container.
 
