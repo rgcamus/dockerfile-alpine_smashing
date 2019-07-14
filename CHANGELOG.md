@@ -3,7 +3,7 @@
 ## v1.1.1-alpine3.10 (14/07/2019)
 
 - Using docker image FROM ruby:2.6.3-alpine3.10
-  - upgradde to alpine 3.10
+  - upgrade to alpine 3.10
   - upgrade to ruby 2.6.3
 
 ## v1.1.0-alpine3.8 (27/10/2018)
