@@ -2,7 +2,9 @@
 
 Run [Smashing](https://github.com/Smashing/smashing) in a minimal [Alpine](https://alpinelinux.org/about/) [Docker](http://docker.io/) container.
 
-Using alpine image. The container size has been reduced from about 800MB to about 200MB.
+![screenshot](/screenshot.gif?raw=true "ScreenShot")
+
+Using alpine image. The container size has been reduced from about 800MB to about 127MB.
 
 Link: [rgcamus/alpine_smashing](https://registry.hub.docker.com/u/rgcamus/alpine_smashing/)
 
